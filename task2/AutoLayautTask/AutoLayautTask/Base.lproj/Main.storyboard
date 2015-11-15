@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ej9-bF-Clv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--second-->
+        <scene sceneID="4Jt-lW-hmZ">
+            <objects>
+                <viewController id="Gp1-EX-Qoi" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="prb-9z-ljD"/>
+                        <viewControllerLayoutGuide type="bottom" id="4om-g3-tY7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5FS-Kd-x1A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="second" id="wYe-Y6-ynV"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8g-3D-5Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="977"/>
+        </scene>
+        <!--third-->
+        <scene sceneID="aYm-3e-ZO5">
+            <objects>
+                <viewController id="8gz-Mq-oTy" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rtw-w6-5P8"/>
+                        <viewControllerLayoutGuide type="bottom" id="e66-0M-iUp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mft-SV-HZq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="third" id="OLu-Wp-5VI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kc3-Qe-r3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="1657"/>
+        </scene>
+        <!--fourth-->
+        <scene sceneID="gGm-C4-4yg">
+            <objects>
+                <viewController id="eyB-Ah-fml" customClass="FourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WdO-eE-xck"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Bu-EH-SdM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQh-WK-Vfi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="fourth" id="4lS-RA-brL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOW-ct-vZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="2311"/>
+        </scene>
+        <!--first-->
+        <scene sceneID="CDS-rj-XXH">
+            <objects>
+                <viewController id="dLF-G0-vaZ" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jqN-JO-b6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ce4-wm-MhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bFs-Eb-bnN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="16" maxValue="304" translatesAutoresizingMaskIntoConstraints="NO" id="5U3-Gm-cHd">
+                                <rect key="frame" x="14" y="190" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tvw-lw-MI3"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="dLF-G0-vaZ" eventType="valueChanged" id="BCM-Nz-3av"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View controllers are the foundation of your " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgs-1U-bKB">
+                                <rect key="frame" x="16" y="105" width="288" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vVU-lJ-vKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5U3-Gm-cHd" firstAttribute="leading" secondItem="bFs-Eb-bnN" secondAttribute="leading" constant="16" id="0ZO-Gj-HBQ"/>
+                            <constraint firstAttribute="trailing" secondItem="pgs-1U-bKB" secondAttribute="trailing" constant="16" id="Gzy-yf-kVE" userLabel="Horizontal Space - (16) - View - View controllers are the foundation of your"/>
+                            <constraint firstAttribute="trailing" secondItem="5U3-Gm-cHd" secondAttribute="trailing" constant="16" id="e3j-TB-1dt"/>
+                            <constraint firstItem="pgs-1U-bKB" firstAttribute="leading" secondItem="bFs-Eb-bnN" secondAttribute="leading" constant="16" id="egx-UW-bMW"/>
+                            <constraint firstItem="pgs-1U-bKB" firstAttribute="top" secondItem="jqN-JO-b6e" secondAttribute="bottom" constant="85" id="iIH-Av-ybI"/>
+                            <constraint firstItem="5U3-Gm-cHd" firstAttribute="top" secondItem="pgs-1U-bKB" secondAttribute="bottom" constant="65" id="utL-lp-PVT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="first" id="lMS-ej-RXE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="constraint" destination="Gzy-yf-kVE" id="rsb-ol-8Rg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXI-Pt-bwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="315"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oi4-l2-FNd">
+            <objects>
+                <tabBarController id="ej9-bF-Clv" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vg9-oc-iVn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dLF-G0-vaZ" kind="relationship" relationship="viewControllers" id="giq-82-9J4"/>
+                        <segue destination="Gp1-EX-Qoi" kind="relationship" relationship="viewControllers" id="m5m-PP-PSo"/>
+                        <segue destination="8gz-Mq-oTy" kind="relationship" relationship="viewControllers" id="bUU-O4-4jH"/>
+                        <segue destination="eyB-Ah-fml" kind="relationship" relationship="viewControllers" id="fHO-6l-D3f"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYJ-OH-clL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313" y="645"/>
+        </scene>
+    </scenes>
+</document>
