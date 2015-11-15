@@ -15,10 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="5FS-Kd-x1A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-230" minValue="-230" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Qz3-dY-Ftz">
+                                <rect key="frame" x="14" y="376" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sOy-l1-vnD"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="Gp1-EX-Qoi" eventType="valueChanged" id="Y2O-bk-BPq"/>
+                                </connections>
+                            </slider>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMm-ef-XFD">
+                                <rect key="frame" x="16" y="28" width="288" height="230"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="OuX-Bo-Znw"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WMm-ef-XFD" secondAttribute="trailing" constant="16" id="FsW-nk-4Kr"/>
+                            <constraint firstItem="WMm-ef-XFD" firstAttribute="leading" secondItem="5FS-Kd-x1A" secondAttribute="leading" constant="16" id="iaw-dv-Ej2"/>
+                            <constraint firstAttribute="trailing" secondItem="Qz3-dY-Ftz" secondAttribute="trailing" constant="16" id="miq-ET-gsY"/>
+                            <constraint firstItem="WMm-ef-XFD" firstAttribute="top" secondItem="prb-9z-ljD" secondAttribute="bottom" constant="8" id="nLb-Ta-9Km"/>
+                            <constraint firstItem="4om-g3-tY7" firstAttribute="top" secondItem="Qz3-dY-Ftz" secondAttribute="bottom" constant="113" id="y4B-Zb-zmy"/>
+                            <constraint firstItem="Qz3-dY-Ftz" firstAttribute="leading" secondItem="5FS-Kd-x1A" secondAttribute="leading" constant="16" id="yqT-E3-sxc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="second" id="wYe-Y6-ynV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="constraint" destination="OuX-Bo-Znw" id="dAX-tN-ebw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8g-3D-5Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
